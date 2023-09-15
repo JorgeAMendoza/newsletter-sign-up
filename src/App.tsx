@@ -1,10 +1,37 @@
 import desktopIllustration from '@/src/assets/images/illustration-sign-up-desktop.svg'
 import mobileIllustration from '@/src/assets/images/illustration-sign-up-mobile.svg'
 import { SignUp } from './features/signup'
+import { useContext, useEffect, useState } from 'react'
+import { ConfirmingEmail } from './features/confirming-email'
+import { Confirmation } from './features/confirmation'
+import { EmailContext } from './context/EmailContext'
 
 console.log(desktopIllustration)
 
 function App() {
+  const email = useContext(EmailContext)
+  const [signUpConfirmed, setSignUpConfirmed] = useState(false)
+  const [confirmingEmail, setConfirmingEmail] = useState(false)
+
+  useEffect(() => {
+    if (signUpConfirmed) setConfirmingEmail(false)
+  }, [signUpConfirmed])
+
+  if (confirmingEmail) {
+    return <ConfirmingEmail confirmSignUp={setSignUpConfirmed} />
+  }
+
+  if (signUpConfirmed) {
+    return (
+      <Confirmation
+        email={email}
+        reset={() => {
+          setSignUpConfirmed(false)
+        }}
+      />
+    )
+  }
+
   return (
     <>
       <main>
@@ -16,7 +43,7 @@ function App() {
             <li>Measuring to ensure updates are a success</li>
             <li>And much more</li>
           </ul>
-          <SignUp />
+          <SignUp submitEmail={setConfirmingEmail} />
         </div>
 
         <picture>
