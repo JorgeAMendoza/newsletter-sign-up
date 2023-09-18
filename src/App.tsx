@@ -39,9 +39,13 @@ function App() {
           <source srcSet={desktopIllustration} media="(min-width: 768px)" />
           <img src={mobileIllustration} alt="sign up" decoding="async"></img>
         </picture>
-        <div className="px-6 mt-7">
-          <h1 className="text-navy-dark text-4xl font-bold">Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div className="px-6 mt-8">
+          <h1 className="text-navy-dark text-4xl font-bold font-roboto">
+            Stay updated!
+          </h1>
+          <p className="mt-3">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
           <ul>
             <li>Product discovery and building what matters</li>
             <li>Measuring to ensure updates are a success</li>

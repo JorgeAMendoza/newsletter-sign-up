@@ -20,6 +20,9 @@ export default {
     fontSize: {
       '4xl': '2.5rem',
     },
+    fontFamily: {
+      roboto: ['Roboto', 'sans-serif'],
+    },
   },
   plugins: [],
 }
