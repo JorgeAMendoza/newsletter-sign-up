@@ -2,7 +2,11 @@
 export default {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      listStyleImage: {
+        checkmark: 'url("/src/assets/images/icon-list.svg")',
+      },
+    },
     colors: {
       navy: {
         pale: '#36384D',

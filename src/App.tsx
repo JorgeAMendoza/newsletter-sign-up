@@ -46,10 +46,20 @@ function App() {
           <p className="mt-3">
             Join 60,000+ product managers receiving monthly updates on:
           </p>
-          <ul>
-            <li>Product discovery and building what matters</li>
-            <li>Measuring to ensure updates are a success</li>
-            <li>And much more</li>
+          <ul className="list-image-checkmark pl-7 mt-6 space-y-1.5 marker:border-x-2 list-outside">
+            <li>
+              <p className="-translate-y-1 ml-2">
+                Product discovery and building what matters
+              </p>
+            </li>
+            <li>
+              <p className="-translate-y-1 ml-2">
+                Measuring to ensure updates are a success
+              </p>
+            </li>
+            <li>
+              <p className="-translate-y-1 ml-2">And much more</p>
+            </li>
           </ul>
           <SignUp submitEmail={setConfirmingEmail} />
         </div>
