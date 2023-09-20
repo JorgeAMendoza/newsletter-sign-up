@@ -12,7 +12,10 @@ export default {
         pale: '#36384D',
         dark: '#242742',
       },
-      vermillion: '#FF6155',
+      vermillion: {
+        base: '#FF6155',
+        light: 'rgba(255, 97, 85, .15)',
+      },
       white: '#fff',
       grey: {
         25: 'rgba(25, 24, 43, 0.25)',

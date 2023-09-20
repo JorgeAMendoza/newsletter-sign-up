@@ -30,7 +30,7 @@ export const SignUp = ({ submitEmail }: SignUpProps) => {
 
   return (
     <form
-      className="mt-8"
+      className="mt-9"
       noValidate
       onSubmit={(e) => {
         // does not reload the page
@@ -38,11 +38,18 @@ export const SignUp = ({ submitEmail }: SignUpProps) => {
         confirmEmail()
       }}
     >
-      <div>
+      <div className="flex justify-between">
         <label htmlFor="signupEmail" className="text-xs font-bold">
           Email address
         </label>
-        {error ? <p aria-live="polite">Valid email required</p> : null}
+        {error ? (
+          <p
+            aria-live="polite"
+            className="text-xs text-vermillion-base font-bold"
+          >
+            Valid email required
+          </p>
+        ) : null}
       </div>
 
       <input
@@ -53,7 +60,11 @@ export const SignUp = ({ submitEmail }: SignUpProps) => {
         onChange={(e) => {
           setText(e.target.value)
         }}
-        className="border border-grey-25 rounded-lg mt-1 w-full p-4 px-6"
+        className={`border border-grey-25 rounded-lg mt-2 w-full p-4 px-6 ${
+          error
+            ? 'bg-vermillion-light text-vermillion-base border-vermillion-base'
+            : 'bg-none'
+        }`}
       />
       <button
         type="submit"
