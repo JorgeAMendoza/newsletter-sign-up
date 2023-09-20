@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <main className="bg-white h-screen">
+      <main className="bg-white min-h-screen pb-6">
         <picture>
           <source srcSet={desktopIllustration} media="(min-width: 768px)" />
           <img src={mobileIllustration} alt="sign up" decoding="async"></img>

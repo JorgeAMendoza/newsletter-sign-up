@@ -30,6 +30,7 @@ export const SignUp = ({ submitEmail }: SignUpProps) => {
 
   return (
     <form
+      className="mt-8"
       noValidate
       onSubmit={(e) => {
         // does not reload the page
@@ -38,7 +39,9 @@ export const SignUp = ({ submitEmail }: SignUpProps) => {
       }}
     >
       <div>
-        <label htmlFor="signupEmail">Email address</label>
+        <label htmlFor="signupEmail" className="text-xs font-bold">
+          Email address
+        </label>
         {error ? <p aria-live="polite">Valid email required</p> : null}
       </div>
 
@@ -50,8 +53,14 @@ export const SignUp = ({ submitEmail }: SignUpProps) => {
         onChange={(e) => {
           setText(e.target.value)
         }}
+        className="border border-grey-25 rounded-lg mt-1 w-full p-4 px-6"
       />
-      <button type="submit">Subscribe to monthly newsletter</button>
+      <button
+        type="submit"
+        className="mt-6 p-4 py-4 w-full rounded-lg bg-navy-dark text-white font-bold"
+      >
+        Subscribe to monthly newsletter
+      </button>
     </form>
   )
 }

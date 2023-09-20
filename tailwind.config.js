@@ -14,6 +14,9 @@ export default {
       },
       vermillion: '#FF6155',
       white: '#fff',
+      grey: {
+        25: 'rgba(25, 24, 43, 0.25)',
+      },
     },
     container: {
       center: true,
@@ -22,6 +25,8 @@ export default {
       },
     },
     fontSize: {
+      xs: '.75rem',
+      base: '1rem',
       '4xl': '2.5rem',
     },
     fontFamily: {
