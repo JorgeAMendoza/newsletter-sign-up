@@ -37,7 +37,12 @@ function App() {
       <main className="bg-white min-h-screen pb-6">
         <picture>
           <source srcSet={desktopIllustration} media="(min-width: 768px)" />
-          <img src={mobileIllustration} alt="sign up" decoding="async"></img>
+          <img
+            src={mobileIllustration}
+            alt="sign up"
+            decoding="async"
+            className="w-full"
+          ></img>
         </picture>
         <div className="px-6 mt-8">
           <h1 className="text-navy-dark text-4xl font-bold font-roboto">
