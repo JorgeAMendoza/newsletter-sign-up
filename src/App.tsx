@@ -11,7 +11,7 @@ console.log(desktopIllustration)
 function App() {
   const email = useContext(EmailContext)
   const [signUpConfirmed, setSignUpConfirmed] = useState(false)
-  const [confirmingEmail, setConfirmingEmail] = useState(false)
+  const [confirmingEmail, setConfirmingEmail] = useState(true)
 
   useEffect(() => {
     if (signUpConfirmed) setConfirmingEmail(false)
