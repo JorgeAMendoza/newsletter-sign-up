@@ -34,14 +34,14 @@ function App() {
 
   return (
     <>
-      <main className="bg-white min-h-screen pb-6">
+      <main className="bg-white min-h-screen pb-6 md:min-h-0 md:p-6 md:rounded-card-tablet md:w-3/4 md:mx-auto ">
         <picture>
-          <source srcSet={desktopIllustration} media="(min-width: 768px)" />
+          <source srcSet={desktopIllustration} media="(min-width: 1024px)" />
           <img
             src={mobileIllustration}
             alt="sign up"
             decoding="async"
-            className="w-full"
+            className="w-full md:rounded-card-tablet"
           ></img>
         </picture>
         <div className="px-6 mt-8">

@@ -10,8 +10,8 @@ interface ConfirmationProps {
 export const Confirmation = ({ email, reset }: ConfirmationProps) => {
   const dispatch = useContext(ActionContext)
   return (
-    <main className="bg-white min-h-screen flex flex-col px-6 justify-center gap-12">
-      <img src={checkmark} alt="" className="w-16"></img>
+    <main className="bg-white min-h-screen flex flex-col px-6 justify-center gap-12 md:min-h-0 md:rounded-card-tablet md:p-6 md:w-3/4 md:mx-auto md:text-center">
+      <img src={checkmark} alt="" className="w-16 md:w-24 md:mx-auto"></img>
       <div>
         <h1 className="text-navy-dark font-bold text-4xl leading-10 mb-6">
           Thanks for subscribing!

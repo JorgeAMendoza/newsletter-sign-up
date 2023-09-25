@@ -6,6 +6,16 @@ export default {
       listStyleImage: {
         checkmark: 'url("/src/assets/images/icon-list.svg")',
       },
+      borderRadius: {
+        'card-tablet': '28px',
+      },
+      fontSize: {
+        xs: '.75rem',
+        base: '1rem',
+        lg: '1.125rem',
+        xl: '1.25rem',
+        '4xl': '2.5rem',
+      },
     },
     colors: {
       navy: {
@@ -26,13 +36,6 @@ export default {
       padding: {
         md: '2rem',
       },
-    },
-    fontSize: {
-      xs: '.75rem',
-      base: '1rem',
-      lg: '1.125rem',
-      xl: '1.25rem',
-      '4xl': '2.5rem',
     },
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
