@@ -16,6 +16,13 @@ export default {
         xl: '1.25rem',
         '4xl': '2.5rem',
       },
+      maxWidth: {
+        desktop: '58rem',
+        'desktop-image': '25rem',
+      },
+      height: {
+        'card-desktop': '40.063rem',
+      },
     },
     colors: {
       navy: {

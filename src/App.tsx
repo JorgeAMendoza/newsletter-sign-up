@@ -34,17 +34,17 @@ function App() {
 
   return (
     <>
-      <main className="bg-white min-h-screen pb-6 md:min-h-0 md:p-6 md:rounded-card-tablet md:w-3/4 md:mx-auto ">
+      <main className="bg-white min-h-screen pb-6 md:min-h-0 md:p-6 md:rounded-card-tablet md:w-3/4 md:max-w-desktop md:mx-auto lg:grid lg:grid-cols-2 lg:gap-12 ">
         <picture>
           <source srcSet={desktopIllustration} media="(min-width: 1024px)" />
           <img
             src={mobileIllustration}
             alt="sign up"
             decoding="async"
-            className="w-full md:rounded-card-tablet"
+            className="w-full md:rounded-card-tablet lg:rounded-none lg:max-w-desktop-image lg:justify-self-end ml-auto"
           ></img>
         </picture>
-        <div className="px-6 mt-8">
+        <div className="px-6 mt-8 lg:order-first lg:mt-0">
           <h1 className="text-navy-dark text-4xl font-bold font-roboto">
             Stay updated!
           </h1>
