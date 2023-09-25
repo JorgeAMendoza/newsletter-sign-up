@@ -6,8 +6,6 @@ import { ConfirmingEmail } from './features/confirming-email'
 import { Confirmation } from './features/confirmation'
 import { EmailContext } from './context/EmailContext'
 
-console.log(desktopIllustration)
-
 function App() {
   const email = useContext(EmailContext)
   const [signUpConfirmed, setSignUpConfirmed] = useState(false)
@@ -34,7 +32,7 @@ function App() {
 
   return (
     <>
-      <main className="bg-white min-h-screen pb-6 md:min-h-0 md:p-6 md:rounded-card-tablet md:w-3/4 md:max-w-desktop md:mx-auto lg:grid lg:grid-cols-2 lg:gap-12 ">
+      <main className="bg-white min-h-screen pb-6 md:min-h-0 md:p-6 md:rounded-card-tablet md:w-3/4 md:max-w-desktop md:mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:rounded-card-desktop">
         <picture>
           <source srcSet={desktopIllustration} media="(min-width: 1024px)" />
           <img
@@ -44,8 +42,8 @@ function App() {
             className="w-full md:rounded-card-tablet lg:rounded-none lg:max-w-desktop-image lg:justify-self-end ml-auto"
           ></img>
         </picture>
-        <div className="px-6 mt-8 lg:order-first lg:mt-0">
-          <h1 className="text-navy-dark text-4xl font-bold font-roboto">
+        <div className="px-6 mt-8 lg:order-first lg:mt-0 xl:p-0 xl:pl-10 xl:mt-14">
+          <h1 className="text-navy-dark text-4xl font-bold font-roboto xl:text-title-desktop">
             Stay updated!
           </h1>
           <p className="mt-3">

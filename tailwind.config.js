@@ -8,6 +8,7 @@ export default {
       },
       borderRadius: {
         'card-tablet': '28px',
+        'card-desktop': '36px',
       },
       fontSize: {
         xs: '.75rem',
@@ -15,6 +16,7 @@ export default {
         lg: '1.125rem',
         xl: '1.25rem',
         '4xl': '2.5rem',
+        'title-desktop': '3.5rem',
       },
       maxWidth: {
         desktop: '58rem',
