@@ -42,7 +42,7 @@ function App() {
             className="w-full md:rounded-card-tablet lg:rounded-none lg:max-w-desktop-image lg:justify-self-end ml-auto"
           ></img>
         </picture>
-        <div className="px-6 mt-8 lg:order-first lg:mt-0 xl:p-0 xl:pl-10 xl:mt-14">
+        <div className="px-6 mt-8 lg:order-first lg:mt-3 xl:p-0 xl:pl-10 xl:mt-14">
           <h1 className="text-navy-dark text-4xl font-bold font-roboto xl:text-title-desktop">
             Stay updated!
           </h1>
