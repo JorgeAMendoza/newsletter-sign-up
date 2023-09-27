@@ -24,6 +24,10 @@ export default {
       },
       height: {
         'card-desktop': '40.063rem',
+        'confirmation-desktop': '32.5rem',
+      },
+      width: {
+        'confirmation-desktop': '31.2rem',
       },
     },
     colors: {
